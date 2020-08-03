@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1298D42524C25E6E0099F409 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1298D42424C25E6E0099F409 /* AppDelegate.swift */; };
 		1298D42724C25E6E0099F409 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1298D42624C25E6E0099F409 /* SceneDelegate.swift */; };
-		1298D42924C25E6E0099F409 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1298D42824C25E6E0099F409 /* ViewController.swift */; };
 		1298D42C24C25E6E0099F409 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1298D42A24C25E6E0099F409 /* Main.storyboard */; };
 		1298D42E24C25E710099F409 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1298D42D24C25E710099F409 /* Assets.xcassets */; };
 		1298D43124C25E710099F409 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1298D42F24C25E710099F409 /* LaunchScreen.storyboard */; };
@@ -19,7 +18,6 @@
 		1298D42124C25E6E0099F409 /* El Gallo Mexican Food.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "El Gallo Mexican Food.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1298D42424C25E6E0099F409 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1298D42624C25E6E0099F409 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1298D42824C25E6E0099F409 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1298D42B24C25E6E0099F409 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1298D42D24C25E710099F409 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1298D43024C25E710099F409 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +35,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		121ED07C24D8BFB100B4DE37 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		121ED07D24D8BFB400B4DE37 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				121ED08024D8BFDF00B4DE37 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		121ED07E24D8BFB600B4DE37 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		121ED07F24D8BFD200B4DE37 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1298D42424C25E6E0099F409 /* AppDelegate.swift */,
+				1298D42624C25E6E0099F409 /* SceneDelegate.swift */,
+				1298D42D24C25E710099F409 /* Assets.xcassets */,
+				1298D43224C25E710099F409 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		121ED08024D8BFDF00B4DE37 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				121ED08224D8BFFB00B4DE37 /* Main */,
+				121ED08124D8BFE700B4DE37 /* Launch */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		121ED08124D8BFE700B4DE37 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				1298D42F24C25E710099F409 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		121ED08224D8BFFB00B4DE37 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1298D42A24C25E6E0099F409 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		1298D41824C25E6E0099F409 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +112,10 @@
 		1298D42324C25E6E0099F409 /* El Gallo Mexican Food */ = {
 			isa = PBXGroup;
 			children = (
-				1298D42424C25E6E0099F409 /* AppDelegate.swift */,
-				1298D42624C25E6E0099F409 /* SceneDelegate.swift */,
-				1298D42824C25E6E0099F409 /* ViewController.swift */,
-				1298D42A24C25E6E0099F409 /* Main.storyboard */,
-				1298D42D24C25E710099F409 /* Assets.xcassets */,
-				1298D42F24C25E710099F409 /* LaunchScreen.storyboard */,
-				1298D43224C25E710099F409 /* Info.plist */,
+				121ED07E24D8BFB600B4DE37 /* Models */,
+				121ED07D24D8BFB400B4DE37 /* Views */,
+				121ED07C24D8BFB100B4DE37 /* Controllers */,
+				121ED07F24D8BFD200B4DE37 /* Resources */,
 			);
 			path = "El Gallo Mexican Food";
 			sourceTree = "<group>";
@@ -138,7 +191,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1298D42924C25E6E0099F409 /* ViewController.swift in Sources */,
 				1298D42524C25E6E0099F409 /* AppDelegate.swift in Sources */,
 				1298D42724C25E6E0099F409 /* SceneDelegate.swift in Sources */,
 			);
@@ -286,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6R6MQNLHPL;
-				INFOPLIST_FILE = "El Gallo Mexican Food/Info.plist";
+				INFOPLIST_FILE = "/Users/lambda_school_loaner_226/Desktop/Projects/ElGallo/El-Gallo-iOS/El Gallo Mexican Food/El Gallo Mexican Food/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6R6MQNLHPL;
-				INFOPLIST_FILE = "El Gallo Mexican Food/Info.plist";
+				INFOPLIST_FILE = "/Users/lambda_school_loaner_226/Desktop/Projects/ElGallo/El-Gallo-iOS/El Gallo Mexican Food/El Gallo Mexican Food/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
